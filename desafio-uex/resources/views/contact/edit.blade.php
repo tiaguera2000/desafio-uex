@@ -81,6 +81,10 @@
                         <label for="">Cep</label>
                         <input type="text" class="form-control" id="zipAddress" name="zip_code" value="{{old("zip_code", $contact->address->zip_code)}}" required>
                     </div>
+                    <div class="form-group">
+                        <label for="">Complemento</label>
+                        <textarea cols="30" rows="2" class="form-control" name="complement">{{old("complement", $contact->address->complement)}}</textarea>                    
+                    </div>
                 </div>
                 <div class="col-sm-6 col-12">
                     <div class="form-group">

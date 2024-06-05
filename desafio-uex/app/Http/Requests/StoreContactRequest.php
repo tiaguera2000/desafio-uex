@@ -37,7 +37,8 @@ class StoreContactRequest extends FormRequest
             "number" => "sometimes",
             "zip_code" => "required",
             "lat" => "sometimes",
-            "lon" => "sometimes" 
+            "lon" => "sometimes",
+            "complement" => "sometimes"
         ];
     }
 }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("district");
             $table->string("street");
             $table->unsignedBigInteger("number");
+            $table->text("complement")->nullable();
             $table->string("lat")->nullable();
             $table->string("lon")->nullable();
             $table->timestamps();

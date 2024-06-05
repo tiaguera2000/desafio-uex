@@ -11,6 +11,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -36,6 +37,9 @@ class UserController extends Controller
 
         try{
 
+            if(!Hash::check($request->password, $user->password)){
+                throw new Exception("Senha incorreta.");
+            }
             DB::beginTransaction();
             Contact::where("user_id", $user->id)->delete();
             $user->delete();

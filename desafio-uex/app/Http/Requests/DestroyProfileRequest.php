@@ -23,7 +23,7 @@ class DestroyProfileRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "password" => "required"
         ];
     }
 }
