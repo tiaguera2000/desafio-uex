@@ -40,7 +40,7 @@
                             <div id="contatos" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <a class="collapse-item" href="{{route("contact.create")}}">Cadastrar</a>
-                                    <a class="collapse-item" href="{{route("contact.index")}}">Listar</a>
+                                    {{-- <a class="collapse-item" href="{{route("contact.index")}}">Listar</a> --}}
                                 </div>
                             </div>
                         </li>
